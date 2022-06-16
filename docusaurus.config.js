@@ -1,20 +1,20 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://josedvq.github.io/blog',
-  baseUrl: '/blog/',
+  title: 'Welcome!',
+  tagline: 'Glad you are here! Hope you\'ll enjoy reading about my interests.',
+  url: 'https://josedvq.github.io',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'josedvq', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
+  projectName: 'josedvq.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Jose Vargas',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Jose David Vargas',
+        src: 'img/me.jpg',
       },
       items: [
         {
@@ -23,9 +23,22 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          to: 'research',
+          docId: 'research',
+          position: 'left',
+          label: 'Research',
+        },
+        {
+          to: 'software',
+          docId: 'software',
+          position: 'left',
+          label: 'Software',
+        },
+        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Old Blog', position: 'left'},
+        {
+          href: 'https://github.com/josedvq',
           label: 'GitHub',
           position: 'right',
         },
@@ -44,16 +57,8 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Social Media',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
             {
               label: 'Twitter',
               href: 'https://twitter.com/docusaurus',
@@ -74,7 +79,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Jose Vargas. Built with Docusaurus.`,
     },
   },
   presets: [
