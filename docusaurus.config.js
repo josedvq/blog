@@ -18,25 +18,24 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
           to: 'research',
           docId: 'research',
           position: 'left',
           label: 'Research',
         },
-        {
-          to: 'software',
-          docId: 'software',
-          position: 'left',
-          label: 'Software',
-        },
+        // {
+        //   to: 'software',
+        //   docId: 'software',
+        //   position: 'left',
+        //   label: 'Software',
+        // },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/blog', label: 'Old Blog', position: 'left'},
+        {
+          to: 'cv', 
+          docId: 'cv',
+          label: 'CV', 
+          position: 'left'
+        },
         {
           href: 'https://github.com/josedvq',
           label: 'GitHub',
@@ -61,16 +60,20 @@ module.exports = {
           items: [
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/josedvq',
             },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/josedvq',
+            }
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'My recipes blog',
+              href: 'https://tungsten-hedge-174.notion.site/Recipes-32ae4a9baac6463992487190d5baa0ff',
             },
             {
               label: 'GitHub',
