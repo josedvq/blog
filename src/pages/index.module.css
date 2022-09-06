@@ -6,16 +6,38 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 10vh 0;
+  text-align: left;
   position: relative;
   overflow: hidden;
 }
 
+.myContainer {
+  padding: 0 15%;
+}
+
+.heroContainer {
+  float: left;
+  margin-left: 2%;
+}
+
+.heroAvatar {
+  float: left;
+}
+
 @media screen and (max-width: 966px) {
+  .myContainer {
+    padding: 0 5%;
+  }
+
   .heroBanner {
     padding: 2rem;
   }
+
+  .heroAvatar {
+    float: none;
+  }
+  
 }
 
 .buttons {

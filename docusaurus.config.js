@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Welcome!',
+  title: 'Jose Vargas-Quiros',
   tagline: 'Glad you are here! Hope you\'ll enjoy reading about my interests.',
   url: 'https://josedvq.github.io',
   baseUrl: '/',
@@ -9,6 +9,18 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'josedvq', // Usually your GitHub org/user name.
   projectName: 'josedvq.github.io', // Usually your repo name.
+  stylesheets: [
+    {
+      href: 'https://use.fontawesome.com/releases/v6.2.0/css/fontawesome.css',
+      media: 'print',
+      onload: 'this.media="all"'
+    },
+    {
+      href: 'https://use.fontawesome.com/releases/v6.2.0/css/all.css',
+      media: 'print',
+      onload: 'this.media="all"'
+    }
+  ],
   themeConfig: {
     navbar: {
       title: 'Jose Vargas',
@@ -18,17 +30,11 @@ module.exports = {
       },
       items: [
         {
-          to: 'research',
-          docId: 'research',
+          to: 'projects',
+          docId: 'projects',
           position: 'left',
-          label: 'Research',
+          label: 'Projects',
         },
-        // {
-        //   to: 'software',
-        //   docId: 'software',
-        //   position: 'left',
-        //   label: 'Software',
-        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           to: 'cv', 

@@ -3,22 +3,29 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Avatar from '@mui/material/Avatar';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import { Socials } from '../components'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
+
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+        <div className={styles.myContainer}>
+          <Avatar alt="Jose Vargas"
+                className={styles.heroAvatar}
+                src={useBaseUrl('/img/me2.jpg')}
+                sx={{ width: 150, height: 150, m: 2 }}/>
+          <div className={styles.heroContainer}>
+            
+            <h1 className="hero__title">{siteConfig.title}</h1>
+            <p className="hero__subtitle">{siteConfig.tagline}</p>
+            <Socials />
+          </div>
         </div>
       </div>
     </header>
@@ -33,7 +40,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
