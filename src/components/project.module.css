@@ -1,0 +1,47 @@
+.container {
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 0;
+    display: flex;
+}
+
+.imgContainer {
+    flex: 1 1;
+    margin-right: 10px;
+}
+
+.img {
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+    flex: 1 1;
+}
+.content {
+    flex: 2 1;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    flex: 2 0;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.linkContainer {
+    display: flex,
+}
+
+.link {
+    margin-right: .7rem;
+    margin-left: -.7rem;
+    padding: .5rem .7rem;
+    color: blue;
+}

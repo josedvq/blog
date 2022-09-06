@@ -1,0 +1,27 @@
+.paperContainer {
+    padding: 1em;
+}
+
+.title {
+    display: inline;
+    font-weight: 500;
+}
+.date {
+    margin: 0 1em;
+    font-size: 0.8em;
+}
+
+.authors {
+    display: inline-block;
+    font-size: 0.85em;
+}
+
+.publication {
+    font-style: italic;
+    font-size: 0.85em;
+    display: inline-block;
+}
+
+.url {
+    float: right;
+}

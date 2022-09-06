@@ -3,12 +3,16 @@ module.exports = {
   title: 'Jose Vargas-Quiros',
   tagline: 'Glad you are here! Hope you\'ll enjoy reading about my interests.',
   url: 'https://josedvq.github.io',
+  deploymentBranch: 'master',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'josedvq', // Usually your GitHub org/user name.
   projectName: 'josedvq.github.io', // Usually your repo name.
+  scripts: [
+    'https://cdn.lightwidget.com/widgets/lightwidget.js'
+  ],
   stylesheets: [
     {
       href: 'https://use.fontawesome.com/releases/v6.2.0/css/fontawesome.css',

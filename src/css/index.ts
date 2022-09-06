@@ -1,1 +1,0 @@
-export { projectStyles } from './project';

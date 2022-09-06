@@ -1,6 +1,7 @@
 import React from 'react';
-import { projectStyles } from '../css';
+import styles from './project.module.css';
 import { TechStacks } from '.';
+import {Paper} from './Paper'
 
 export const Project = ({
   img,
@@ -9,20 +10,30 @@ export const Project = ({
   codeLink,
   liveLink,
   techstack,
+  paper,
+  tags
 }) => {
-  const classes = projectStyles();
 
   return (
-    <section className={classes.container}>
-      <div className={classes.imgContainer}>
-        <img src={img} className={classes.img} alt="dummy img" />
+    <section className={styles.container}>
+      <div className={styles.imgContainer}>
+        <img src={img} className={styles.img} alt="dummy img" />
       </div>
-      <div className={classes.content}>
-        <div className={classes.titleContainer}>
-          <span className={classes.title}>{title}</span>
+      <div className={styles.content}>
+        <div className={styles.titleContainer}>
+          <span className={styles.title}>{title}</span>
         </div>
-        <span className={classes.description}>{description}</span>
-        <div className={classes.linkContainer}>
+        <span className={styles.description}>{description}</span>
+
+        {paper && 
+          <div style={{margin: '1em auto'}}>
+            <Paper {...paper} />
+          </div>
+        }
+          
+        
+
+        <div className={styles.linkContainer}>
           {codeLink ? (
             <a
               style={{
@@ -54,7 +65,9 @@ export const Project = ({
             <></>
           )}
         </div>
-        <TechStacks stack={techstack} />
+        {techstack &&
+          <TechStacks stack={techstack} />
+        }
       </div>
     </section>
   );

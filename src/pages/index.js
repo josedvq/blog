@@ -40,6 +40,9 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <div className='container'>
+          <iframe src="https://lightwidget.com/widgets/a3b4deb0856b5733b1db34153b5c37ca.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style={{width:'100%', border:0, overflow:'hidden'}}></iframe>
+        </div>
       </main>
     </Layout>
   );
