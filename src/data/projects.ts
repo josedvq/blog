@@ -32,29 +32,14 @@ export const projects: Array<ProjectType> = [
       }
     },
     {
-      img: 'img/kanji.png',
-      title: 'Kanji To Hiragana',
-      description:
-        'User can input kanji and the kanji will be transformed to hiragana',
-      codeLink: 'https://github.com/djamaile/kanji-to-hiragana/',
-      liveLink: 'https://djamaile.github.io/kanji-to-hiragana/',
-      techstack: ['ReactJS'],
-    },
-    {
-      img: 'img/anatoken.png',
-      title: 'AnaToken',
-      description:
-        'Developed an application that runs on the Ethereum blockchain to help address plastic waste problems in Ghana. The plan is to take this project and further develop it in the upcoming hackathon of odyssey',
-      codeLink: 'https://github.com/anatoken',
-      liveLink: '',
-      techstack: ['ReactJS', 'Solidity', 'Ethereum'],
-    },
-    {
-      img: 'img/djamaile-light.png',
-      title: 'Portfolio',
-      description: 'Personal portfolio',
-      codeLink: 'https://github.com/djamaile/portfolio',
-      liveLink: 'djamaile.dev',
-      techstack: ['ReactJS', 'TypeScript'],
-    },
+      title: 'Attraction and body movement in speed dates',
+      description: 'We present a study of attraction in the dyadic speed date setting. The study made use of accelerometer information (from chest-worn accelerometers) from 398 dyadic speed dates to analyze the relationship between body movement and self-reported affiliative goals related to attraction. Through machine learning experiments designed to capture individual and pairwise body movement information, we investigated the predictive power of body movement information towards attraction estimation. In particular, the pairwise features used in our study were designed to capture synchrony, mimicry and convergence information.',
+      paper: {
+        title: 'ConfLab: A Data Collection Concept, Dataset, and Benchmark for Machine Analysis of Free-Standing Social Interactions in the Wild',
+        authors: 'Chirag Raman, Jose Vargas-Quiros, Stephanie Tan, Ekin Gedik, Ashraful Islam, and Hayley Hung',
+        publication: 'Transactions on Affective Computing',
+        url: 'https://doi.org/10.48550/arXiv.2205.05177',
+        date: '2022'
+      }
+    }
   ];

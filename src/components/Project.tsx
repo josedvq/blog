@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './project.module.css';
 import { TechStacks } from '.';
 import {Paper} from './Paper'
+import {useColorMode} from '@docusaurus/theme-common';
+
 
 export const Project = ({
   img,
@@ -14,11 +16,14 @@ export const Project = ({
   tags
 }) => {
 
+  const { isDarkTheme } = useColorMode();
+
   return (
     <section className={styles.container}>
+      {img && 
       <div className={styles.imgContainer}>
         <img src={img} className={styles.img} alt="dummy img" />
-      </div>
+      </div>}
       <div className={styles.content}>
         <div className={styles.titleContainer}>
           <span className={styles.title}>{title}</span>

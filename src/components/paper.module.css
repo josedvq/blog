@@ -12,14 +12,14 @@
 }
 
 .authors {
-    display: inline-block;
+    display: block;
     font-size: 0.85em;
 }
 
 .publication {
     font-style: italic;
     font-size: 0.85em;
-    display: inline-block;
+    display: block;
 }
 
 .url {
