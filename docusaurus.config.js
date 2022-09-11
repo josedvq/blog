@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Jose Vargas-Quiros',
-  tagline: 'Glad you are here! Hope you\'ll enjoy reading about my interests.',
+  tagline: 'I enjoy developing and researching software for scientific and machine learning applications.',
   url: 'https://josedvq.github.io',
   deploymentBranch: 'master',
   baseUrl: '/',

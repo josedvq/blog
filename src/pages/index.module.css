@@ -17,8 +17,7 @@
 }
 
 .heroContainer {
-  float: left;
-  margin-left: 2%;
+  margin-left: 182px;
 }
 
 .heroAvatar {
@@ -34,6 +33,10 @@
     padding: 2rem;
   }
 
+  .heroContainer {
+    margin-left: 0;
+  }
+
   .heroAvatar {
     float: none;
   }
@@ -44,4 +47,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.homep {
+  font-size: 1.4em;
 }

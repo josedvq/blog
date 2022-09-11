@@ -23,7 +23,7 @@ function HomepageHeader() {
           <div className={styles.heroContainer}>
             
             <h1 className="hero__title">{siteConfig.title}</h1>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
+            <p className={styles.homep}>{siteConfig.tagline}</p>
             <Socials />
           </div>
         </div>
@@ -41,7 +41,10 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <div className='container'>
-          <iframe src="https://lightwidget.com/widgets/a3b4deb0856b5733b1db34153b5c37ca.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style={{width:'100%', border:0, overflow:'hidden'}}></iframe>
+          <div className={styles.myContainer} style={{paddingTop: '1.8em', paddingBottom: '1.8em'}}>
+            <p className={styles.homep}>In my free time, I like to go around taking photos. If you find them interesting, feel free to follow me in Instagram &#128512;</p>
+            <iframe src="https://lightwidget.com/widgets/a3b4deb0856b5733b1db34153b5c37ca.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style={{width:'100%', border:0, overflow:'hidden'}}></iframe>
+          </div>
         </div>
       </main>
     </Layout>
