@@ -39,7 +39,36 @@ export const projects: Array<ProjectType> = [
         authors: 'Chirag Raman, Jose Vargas-Quiros, Stephanie Tan, Ekin Gedik, Ashraful Islam, and Hayley Hung',
         publication: 'Transactions on Affective Computing',
         url: 'https://doi.org/10.48550/arXiv.2205.05177',
+        date: '2021'
+      }
+    },
+    {
+      title: 'Differences in the annotation of laughter across modalities ',
+      description: 'Although laughter is well-recognized as a multimodal phenomenon, it is unclear how annotation of laughter differs when done from modalities like video, without access to audio. In this work we take a first step in this direction by asking if and how well laughter can be annotated when only audio, only video (containing full body movement information) or audiovisual modalities are available to annotators. We ask whether annotations of laughter are congruent across modalities, and compare the effect that labeling modality has on machine learning model performance. We compare annotations and models for laughter detection, intensity estimation, and segmentation, three tasks common in previous studies of laughter. Our analysis makes use of more than 4000 annotations acquired from 48 annotators, making use of the Covfee annotation framework.',
+      paper: {
+        title: 'Differences in annotation of laughter across modalities',
+        authors: 'Jose Vargas-Quiros, Laura Cabrera-Quiros, Catharine Oertel, and Hayley Hung',
+        date: '2022'
+      }
+    },
+    {
+      title: 'LaRed dataset: a mingling dataset with high-quality individual audio',
+      description: 'Recognizing voice activity from human speakers in a multimodal recording is a central task towards the understanding of the social interactions occurring within it. LaRed is an in-the-wild dataset for the study of voice activity from body movement. For ground truth, our dataset contains high-fidelity audio recordings from individual Lavalier microphones worn by subjects in the scene. The dataset also contains automatically-extracted pose tracks and chest-worn accelerometer readings, which provide an indication of overall body movement. We present three baselines for no-audio voice activity detection: a) voice activity detection from video, b) voice activity detection from body acceleration (chest-worn accelerometer), c) voice activity detection from our noisy pose tracks. The LaRed dataset provides the signals and ground truth necessary to evaluate a wide range of methods for voice activity detection from body movements.',
+      paper: {
+        title: 'LaRed Dataset: no-audio speaking status detection in a crowded-setting',
+        authors: 'Jose Vargas-Quiros, Hayley Hung, and Laura Cabrera-Quiros',
         date: '2022'
       }
     }
+    // {
+    //   title: 'Attraction and body movement in speed dates',
+    //   description: 'My Master\'s thesis on information-theoretical approaches to anomaly detection and authorship attribution using the KRIMP algorithm',
+    //   paper: {
+    //     title: 'ConfLab: A Data Collection Concept, Dataset, and Benchmark for Machine Analysis of Free-Standing Social Interactions in the Wild',
+    //     authors: 'Chirag Raman, Jose Vargas-Quiros, Stephanie Tan, Ekin Gedik, Ashraful Islam, and Hayley Hung',
+    //     publication: 'Transactions on Affective Computing',
+    //     url: 'https://doi.org/10.48550/arXiv.2205.05177',
+    //     date: '2022'
+    //   }
+    // }
   ];
