@@ -8,5 +8,5 @@ export interface Project {
     liveLink?: string | null;
     tags?: ['software' | 'research']
     techstack?: Array<string>;
-    paper?: Paper
+    papers?: Paper[]
   }

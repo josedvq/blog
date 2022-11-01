@@ -12,7 +12,7 @@ export const Project = ({
   codeLink,
   liveLink,
   techstack,
-  paper,
+  papers,
   tags
 }) => {
 
@@ -30,10 +30,13 @@ export const Project = ({
         </div>
         <span className={styles.description}>{description}</span>
 
-        {paper && 
-          <div style={{margin: '1em auto'}}>
-            <Paper {...paper} />
-          </div>
+        {papers && 
+          papers.map(paper=>{
+            return <div style={{margin: '1em auto'}}>
+              <Paper {...paper} />
+            </div>
+          })
+          
         }
           
         
