@@ -29,6 +29,7 @@ export const Project = ({
           <span className={styles.title}>{title}</span>
         </div>
         <span className={styles.description}>{description}</span>
+        
 
         {papers && 
           papers.map(paper=>{

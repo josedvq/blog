@@ -1,3 +1,5 @@
+import React from 'react';
+import Link from '@docusaurus/Link';
 import {
     Project as ProjectType,
   } from '../types';
@@ -8,9 +10,19 @@ export const projects: Array<ProjectType> = [
     {
       img: 'img/conflab.jpg',
       title: 'The ConfLab Social Interaction Dataset',
-      description: 'A privacy-sensitive data collection concept and dataset for in-the-wild social interactions. We recorded free interaction of 48 subjects during a networking event at ACM Multimedia 2019. Our capture setup improves upon the data fidelity of prior in-the-wild datasets while retaining privacy sensitivity. We recorded videos from a non-invasive overhead view. Via chest-worn wearable sensors, we recorded body motion (9-axis IMU) low-frequency audio (1250 Hz), and Bluetooth-based proximity. Our benchmarks showcase some of the open research tasks related to in-the-wild privacy-preserving social data analysis: keypoints detection from overhead camera views, skeleton-based no-audio speaker detection, and F-formation detection. ',
+      description: <>
+        <p>ConfLab is a privacy-sensitive data collection concept and dataset for in-the-wild social interactions. We recorded free interaction of 48 subjects during a networking event at ACM Multimedia 2019. Our capture setup improves upon the data fidelity of prior in-the-wild datasets while retaining privacy sensitivity. We recorded videos from a non-invasive overhead view. Via chest-worn wearable sensors, we recorded body motion (9-axis IMU) low-frequency audio (1250 Hz), and Bluetooth-based proximity.</p>
+        
+        <p style={{textAlign:'center'}}>
+        <Link className="button button--primary" to="https://josedvq.github.io/conflab-web">
+            To ConfLab dataset
+        </Link>
+        </p>
+
+        <p>Our benchmarks tasks showcase some of the open research tasks related to in-the-wild privacy-preserving social data analysis: keypoints detection from overhead camera views (via fine-tuned Mask-RCNN), skeleton-based no-audio speaker detection (vi), and F-formation detection. The ConfLab project resulted in the following publications.</p>
+      </>,
       codeLink: 'https://github.com/TUDelft-SPC-Lab/conflab',
-      liveLink: 'https://data.4tu.nl/collections/ConfLab_A_Rich_Multimodal_Multisensor_Dataset_of_Free-Standing_Social_Interactions_In-the-Wild/6034313',
+      liveLink: 'https://josedvq.github.io/conflab-web',
       papers: [
         {
           title: 'ConfLab: A Data Collection Concept, Dataset, and Benchmark for Machine Analysis of Free-Standing Social Interactions in the Wild',
@@ -32,9 +44,12 @@ export const projects: Array<ProjectType> = [
     {
       title: 'Differences in the annotation of laughter across modalities ',
       description: 'Although laughter is well-recognized as a multimodal phenomenon, it is unclear how annotation of laughter differs when done from modalities like video, without access to audio. In this work we take a first step in this direction by asking if and how well laughter can be annotated when only audio, only video (containing full body movement information) or audiovisual modalities are available to annotators. We ask whether annotations of laughter are congruent across modalities, and compare the effect that labeling modality has on machine learning model performance. We compare annotations and models for laughter detection, intensity estimation, and segmentation, three tasks common in previous studies of laughter. Our analysis makes use of more than 4000 annotations acquired from 48 annotators, making use of the Covfee annotation framework.',
+      codeLink: 'https://github.com/josedvq/lared-laughter',
       papers: [{
         title: 'Differences in annotation of laughter across modalities',
         authors: 'Jose Vargas-Quiros, Laura Cabrera-Quiros, Catharine Oertel, and Hayley Hung',
+        publication: 'Under review',
+        url: '',
         date: '2022'
       }]
     },
@@ -42,7 +57,15 @@ export const projects: Array<ProjectType> = [
     {
       img: 'img/covfee.jpg',
       title: 'Covfee: an extensible web framework for continuous-time annotation of human behavior',
-      description: 'During my PhD, I developed a web-based, extensible framework for continuous annotation aimed at crowd-sourcing. Our experiments showed that continuous techniques (implemented in Covfee) can save human annotation time with no loss in annotation agreement.',
+      description: <>During my PhD, I developed a web-based, extensible framework for continuous annotation aimed at crowd-sourcing. Our experiments showed that continuous techniques (implemented in Covfee) can save human annotation time with no loss in annotation agreement.
+      
+      <p style={{textAlign:'center'}}>
+        <Link className="button button--primary" to="https://github.com/josedvq/covfee">
+            To Covfee docs
+        </Link>
+      </p>
+
+      </>,
       codeLink: 'https://github.com/josedvq/covfee',
       liveLink: 'https://josedvq.github.io/covfee/',
       papers: [
@@ -79,8 +102,6 @@ export const projects: Array<ProjectType> = [
     {
       title: 'No-audio speaking status detection in crowded settings via visual pose-based filtering and wearable acceleration',
       description: 'Recognizing who is speaking in a crowded scene is a key challenge towards the understanding of the social interactions going on within it. Unfortunately individual audio recordings are not available in many social interaction datasets due to subject privacy and logistic challenges. However, video and wearable sensors make it possible to recognize speaking in an unobtrusive, privacy-preserving way through body movement information. When considering the video modality, a bounding box is traditionally used in action recognition problems to localize the target subject whose action is to be assessed. However, cross-contamination, occlusion, and the articulated nature of the human body, make bounding boxes unsuitable in crowded scenes. We address this problem via a method making use of articulated body poses for subject localization and in the subsequent speech detection stage. We show that the selection of local features around pose keypoints has a positive effect on generalization performance while also significantly reducing the number of local features considered, making for a more efficient method. Using two in-the-wild datasets with different viewpoints of subjects, we investigate the role of cross-contamination in this effect. We additionally make use of acceleration measured through wearable sensors for the same task, and present a multimodal approach combining both methods.',
-      // codeLink: 'https://github.com/TUDelft-SPC-Lab/conflab',
-      // liveLink: 'https://data.4tu.nl/collections/ConfLab_A_Rich_Multimodal_Multisensor_Dataset_of_Free-Standing_Social_Interactions_In-the-Wild/6034313',
       papers: [
         {
           title: 'No-audio speaking status detection in crowded settings via visual pose-based filtering and wearable acceleration',
@@ -106,6 +127,7 @@ export const projects: Array<ProjectType> = [
       papers: [{
         title: 'LaRed Dataset: no-audio speaking status detection in a crowded-setting',
         authors: 'Jose Vargas-Quiros, Hayley Hung, and Laura Cabrera-Quiros',
+        publication: 'Work in progress',
         date: '2022'
       }]
     },
