@@ -49,7 +49,7 @@ export const projects: Array<ProjectType> = [
         title: 'Differences in annotation of laughter across modalities',
         authors: 'Jose Vargas-Quiros, Laura Cabrera-Quiros, Catharine Oertel, and Hayley Hung',
         publication: 'Under review',
-        url: '',
+        url: 'https://arxiv.org/abs/2211.00794',
         date: '2022'
       }]
     },
@@ -111,10 +111,10 @@ export const projects: Array<ProjectType> = [
           date: '2019'
         },
         {
-          title: 'Multimodal Data Collection for Social Interaction Analysis In-the-Wild',
-          authors: 'Hayley Hung, Chirag Raman, Ekin Gedik, Stephanie Tan and Jose Vargas',
-          publication: 'MM \'19 - Proceedings of the 27th ACM International Conference on Multimedia',
-          url: 'https://dl-acm-org.tudelft.idm.oclc.org/doi/10.1145/3343031.3351320',
+          title: 'CNNs and Fisher Vectors for No-Audio Multimodal Speech Detection',
+          authors: 'Jose Vargas-Quiros, Hayley Hung',
+          publication: 'Proceedings of the MediaEval 2019 Multimedia Benchmark Workshop',
+          url: 'http://ceur-ws.org/Vol-2670/MediaEval_19_paper_23.pdf',
           date: '2019'
         }
       ]
