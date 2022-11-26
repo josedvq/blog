@@ -69,10 +69,6 @@ module.exports = {
           title: 'Social Media',
           items: [
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/josedvq',
-            },
-            {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/in/josedvq',
             }
